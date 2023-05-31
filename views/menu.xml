@@ -1,0 +1,8 @@
+<odoo>
+
+    <!-- Menus -->
+    <menuitem id="module_root" name="Module name"/> <!-- Menu item for "Formation" -->
+    <menuitem id="module_root_menu" name="Module name" parent="module_root"/> <!-- Parent menu item for "University" -->
+    <menuitem id="model_menu" name="Model" parent="module_root_menu" action="model_action_view"/> <!-- Menu item for "Model name" with associated action "model_name_action_view" -->
+
+</odoo>

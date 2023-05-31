@@ -1,0 +1,57 @@
+<odoo>
+    <data>
+        <!-- Define the tree view -->
+        <record id="model_name_tree_view" model="ir.ui.view">
+            <field name="name">model_technical_name.tree(model.model.tree)</field>
+            <field name="model">model_technical_name(model.model)</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="string">
+                    <!-- Add fields to display in the tree view -->
+                    <field name="field_name"/>
+                    <field name="field_name"/>
+                    <field name="field_name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Define the form view -->
+        <record id="model_name_form_view" model="ir.ui.view">
+            <field name="name">model_technical_name.form(model.model.form)</field>
+            <field name="model">model_technical_name(model.model)</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Units">
+                    <!-- Add fields and other view components here -->
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="field_name"/>
+                                <field name="field_name"/>
+                            </group>
+                            <group>
+                                <field name="field_name"/>
+                            </group>
+                        </group>
+                        <!--tabs-->
+                        <notebook>
+                            <!--each page is a tab-->
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action view -->
+        <record id="model_name_action_view" model="ir.actions.act_window">
+            <field name="name">Model Name</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">model_technical_name</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
