@@ -8,4 +8,5 @@ Start your odoo module starting from here
 
 # Create Odoo user for postgresql DB
 `sodu su postgres`
- `createuser --createdb --username postgres --no-createrole --no-superuser --pwprompt odoo15`
+
+`createuser --createdb --username postgres --no-createrole --no-superuser --pwprompt odoo15`
